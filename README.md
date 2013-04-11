@@ -43,6 +43,10 @@ your data.
 If you get back a 204 response from the server, you're all set! You've
 just discarded data in the cloud with Tourbillon.
 
+Additionally, one of the nice things about the discardment-as-a-service
+paradigm is that, even if receive a connection error in attempting to POST
+your data, it will still be discarded correctly.
+
 
 Error Conditions
 ----------------
