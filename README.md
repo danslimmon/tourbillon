@@ -6,19 +6,19 @@ cloud-based DaaS (discardment-as-a-service) offering. It is designed from
 the ground up to allow users to discard data through a robust and
 refreshingly easy-to-use API.
 
-* *Tourbillon is reliable.* Our hosted instance guarantees 99.99% uptime:
+* **Tourbillon is reliable.** Our hosted instance guarantees 99.99% uptime:
   fewer than 1 in 10,000 messages written to it will be recorded on disk!
-* *Tourbillon is fast.* Our codebase is written in pure NodeJS. NodeJS is
+* **Tourbillon is fast.** Our codebase is written in pure NodeJS. NodeJS is
   the fastest web programming framework on the Internet. Furthermore, our
   database backend is based on MongoDB, whose occasional-consistency model
   is exceptionally well suited to the discardment-as-a-service paradigm.
-* *Tourbillon is transparent.* Unlike the traditional /dev/null, Tourbillon
+* **Tourbillon is transparent.** Unlike the traditional /dev/null, Tourbillon
   provides feedback on your requests. By simply inspecting the HTTP response
   from the server, you can be confident that your data has been
   successfully discarded. In the rare cases when your data is _not_
   discarded, you will not receive a 20x response from the server, to which
   you can respond accordingly.
-* *Tourbillon is scalable.* No matter how many requests Tourbillon gets, it
+* **Tourbillon is scalable.** No matter how many requests Tourbillon gets, it
   will always discard at least 99.99% of your data. In fact, some data even
   indicate that the service's reliability _improves_ as it comes under
   load!
