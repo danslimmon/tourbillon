@@ -14,7 +14,7 @@ function parseOutData(reqbody, response) {
 }
 
 app.get('/', function(request,response) {
-    response.redirect('https://github.com/danslimmon/tourbillon');
+    response.redirect('https://github.com/danslimmon/tourbillon/blob/master/README.md');
 }
 
 app.post('/dev/null', function(request, response) {
