@@ -15,7 +15,7 @@ function parseOutData(reqbody, response) {
 
 app.get('/', function(request,response) {
     response.redirect('https://github.com/danslimmon/tourbillon/blob/master/README.md');
-}
+});
 
 app.post('/dev/null', function(request, response) {
     var conttype = request.header('Content-Type');
