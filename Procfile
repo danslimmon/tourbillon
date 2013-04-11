@@ -1,1 +1,1 @@
-tourbillon: node tourbillon.js
+web: node tourbillon.js
