@@ -13,6 +13,10 @@ function parseOutData(reqbody, response) {
     return reqbody.data;
 }
 
+app.get('/', function(request,response) {
+    response.redirect('https://github.com/danslimmon/tourbillon');
+}
+
 app.post('/dev/null', function(request, response) {
     var conttype = request.header('Content-Type');
     if (! conttype) {
