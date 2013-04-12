@@ -1,7 +1,7 @@
 Tourbillon: Discardment done right.
 ===================================
 
-[Tourbillon][twitter] is a highly scalable,
+Tourbillon is a highly scalable,
 cloud-based DaaS (discardment-as-a-service) offering. It is designed from
 the ground up to allow users to discard data through a robust and
 refreshingly easy-to-use API.
@@ -16,10 +16,10 @@ refreshingly easy-to-use API.
   provides feedback on your requests. By simply inspecting the HTTP response
   from the server, you can be confident that your data has been
   successfully discarded. In the rare cases when your data is _not_
-  discarded, you will not receive a 20x response from the server, to which
+  discarded, you will not receive a 20x response from the server, and
   you can respond accordingly.
 * **Tourbillon is scalable.** No matter how many requests Tourbillon gets, it
-  will always discard at least 99.99% of your data. In fact, some data even
+  will always discard at least 99.99% of your data. In fact, some tests even
   indicate that the service's reliability _improves_ as it comes under
   load!
 
@@ -32,7 +32,7 @@ an HTTP POST request to our hosted instance:
 
     curl -H 'Content-Type: application/json' \
         --request POST \
-        --data '{"data":"Goodbye world!"} \
+        --data '{"data":"Goodbye world!"}' \
         https://tourbillon.herokuapp.com/dev/null
 
 The body of your request must be JSON-formatted (for now!) and must have a
@@ -60,5 +60,3 @@ You'll get a 500 error like:
 As explained above, Tourbillon is very reliable, but mistakes do happen
 occasionally. In any case, you can retry your request immediately with
 very high confidence that it'll work the second time around.
-
-[twitter]: https://twitter.com/tourbillon
